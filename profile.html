@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, #bf2c34, #be398d, #5c62d6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile {
+            height: 600px;
+            width: 500px;
+            background-color: black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .img {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            border-radius: 90px;
+            margin-top: 30px;
+        }
+
+        .separator {
+            height: 600px;
+            width: 100px;
+        }
+
+        .detail {
+            height: 600px;
+            width: 500px;
+            background-color: black;
+            display: flex;
+            border-radius: 20px;
+            justify-content: center;
+        }
+
+        .edit {
+            color: white;
+            /* background: linear-gradient( to right, #bf2c34, #be398d, #5c62d6); -webkit-background-clip: text;color: transparent; */
+            margin-top: 30px;
+        }
+
+        .photo {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+        }
+
+        .name {
+            color: #be398d;
+            font-size: 35px;
+            margin-top: 30px;
+        }
+
+        .two {
+            
+            color: #be398d;
+            font-size: 30px;
+        }
+        
+    @media screen  and (max-width:600px) {.main{
+        flex-direction: column;
+        
+    }
+    .separator{
+        height: auto;
+        margin: 10px;
+    }
+    
+    }
+    @media screen  and (max-width:500px) {.img{
+                height: auto;
+                width: 100px;
+    }
+    .profile{
+        height: auto;
+        width: 300px;
+    }
+    .detail{
+        height: auto;
+        width: 400px;
+    }
+    .name{
+        font-size: 25px;
+
+    }
+    .edit{
+        font-size: 15px;
+        
+    }
+}
+@media screen  and (max-width:401px) {.profile{
+            height: auto;
+            width: 150px;
+    }
+    .detail{
+        height: auto;
+        width: 300px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .edit{
+        font-size: 10px;
+    }
+    }
+    @media screen  and (max-width:300px) {.profile{
+            height: auto;
+            width: 100px;
+    }
+    .detail{
+        height: auto;
+        width: 200px;
+    }
+    .name{
+        font-size: 10px;
+    }
+    .edit{
+        font-size: 9px;
+    }
+    .img{
+        height: auto;
+        width: 50px;
+    }
+    }
+    @media screen  and (max-width:201px) {.profile{
+            height: auto;
+            width: 100px;
+    }
+    .detail{
+        height: auto;
+        width:200px;
+    }
+    .name{
+        font-size: 8px;
+    }
+    .edit{
+        font-size: 8px;
+    }
+    .img{
+        height: auto;
+        width: 30px;
+    }
+    }  
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="profile">
+            <div class="img">
+                <img src="image\cat-8157889_1280.png" class="photo" alt="profile picture">
+                <div class="name">
+                    <h4>John Doe</h4>
+                </div><br>
+                <div class="edit">
+                    <h3>Web Developer</h3>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="detail">
+            <div class="text">
+                <h1 class="name">Profile Details</h1>
+                <h3 class="edit">Name:John Doe</h3>
+                <h3 class="edit">Age:35</h3>
+                <h3 class="edit">Mobile:+91XXXXXXXXXX</h3>
+                <h3 class="edit">Email:johndoe@gmail.com</h3>
+                <h3 class="edit">Address:123 Main St,Anytown,USA</h3><br><br>
+                <h3 class="edit">Made with❤️by <b>Learning Robo</b></h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
